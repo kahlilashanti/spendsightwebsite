@@ -23,6 +23,11 @@ h2.panel-title
   color: white;
 }
 
+#email
+{
+  color: white;
+}
+
 /* vertical-centered text */
 .text-vcenter {
   display: table-cell;
