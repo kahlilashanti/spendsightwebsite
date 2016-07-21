@@ -23,6 +23,24 @@ h2.panel-title
   color: white;
 }
 
+#demo_button
+{
+  color: white;
+}
+
+#demo_button_2
+{
+  color: white;
+
+}
+
+#demo_2
+{
+margin-top: 7px;
+margin-right: 5px;
+}
+
+
 #email
 {
   color: white;
@@ -54,8 +72,7 @@ h2.panel-title
   background-size: cover;
 }
 
-#about {
-}
+
 
 #services {
   background-color: #306d9f;
