@@ -13,8 +13,8 @@
     <!--  BODY PAGE CONTENT -->
 
   <!-- attach JavaScripts -->
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 
   <!-- navigation panel -->
@@ -22,13 +22,13 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">spendsight</a>
+            <a href="#" class="navbar-brand">spendsight</a>
           </div>
 
           <div class="collapse navbar-collapse" id="navbar-collapse-main">
@@ -77,12 +77,12 @@
       <!-- third section - Services -->
       <div id="services" class="pad-section">
         <div class="container">
-          <h2 class="text-center">The SpendSight Difference</h2> <hr />
+          <h2 class="text-center">The Spendsight Difference</h2> <hr />
           <div class="row text-center">
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon glyphicon-tags"> </i>
               <h3>Anticipate The Needs of Your Players</h3>
-              <p>We consolidate player data from iGaming, Retail, Dining, Leisure, Entertainment and more - providing you with an accurate player profile that includes lifetime value, offer redemption and trends over time.</p>
+              <p>We consolidate player data from iGaming, Retail, Dining, Leisure, Entertainment and more - providing you with an accurate player profile that includes lifetime value, offer redemption and trends .</p>
             </div>
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon glyphicon-education"> </i>
@@ -97,7 +97,7 @@
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon glyphicon-phone"> </i>
               <h3>Personalized Tech Support</h3>
-              <p>800 numbers have no place in a connected economy.  Text us, tweet us, or send Ravens.</p>
+              <p>Text us, tweet us, or send Ravens.</p>
             </div>
           </div>
         </div>
@@ -168,6 +168,43 @@
         </div>
       </div>
       <!-- /fifth section -->
+
+<!-- contact form section -->
+<div class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title">Modal title</h4>
+</div>
+<div class="modal-body">
+  <p>One fine body&hellip;</p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- contact form section -->
+<!-- <form action="https://formspree.io/kahlil@spendsight.com"
+      method="POST">
+    <input type="text" name="name" placeholder="First and Last Name Here">
+    <input type="email" name="_replyto" placeholder="Your Email Here">
+    <textarea name="name" rows="8" cols="40" input type="message" name="_message" placeholder="How can we help?"></textarea>
+    <input type="submit" value="Send">
+</form> -->
+
+<form id="contactform" action="//formspree.io/kahlil@spendsight.com" method="POST">
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="hidden" name="_subject" value="Who to contact" />
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="_replyto" placeholder="Your email">
+    <textarea name="message" placeholder="Your message"></textarea>
+    <input type="submit" value="Send">
+</form>
+<!-- contact form section -->
 
     <!-- google map -->
     <div id="google_map"></div>

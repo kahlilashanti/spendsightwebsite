@@ -31,4 +31,23 @@ $(document).ready(function (){
   var infowindow = new google.maps.InfoWindow({
     content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
   });
+  
+  // contact form
+  $(function() {
+
+  // contact form animations
+  $('#contact').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+
+});
 });
