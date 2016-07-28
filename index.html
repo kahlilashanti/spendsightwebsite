@@ -4,10 +4,17 @@
     <meta charset="utf-8">
     <title>SpendSight Technologies Inc.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- attach CSS styles -->
+    <!-- attach CSS styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" />
+    <!-- attach CSS styles -->
+
+    <!-- for jquery-ui dialog widget only-->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <!-- for jquery-ui dialog widget only-->
+
   </head>
   <body>
     <!--  BODY PAGE CONTENT -->
@@ -15,6 +22,7 @@
   <!-- attach JavaScripts -->
   <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
   <script src="main.js"></script>
 
   <!-- navigation panel -->
@@ -37,7 +45,8 @@
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#information">Meet The Team</a></li>
-              <li><button type="button" class="btn btn-danger" id="demo_2"><a href="#google_map" id="demo_button_2">Request A Demo</a></button></li>
+              <li><button type="button" class="btn btn-danger" id="demo_2">Request A Demo</button></li>
+              <!-- <button id="demo_button_2"></button> -->
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -67,7 +76,7 @@
             </div>
             <div class="col-sm-6 text-center">
               <h2>At SpendSight we see things differently. </h2>
-              <p class="lead">The expectation of the casino visitor is rapidly evolving towards spending more money on experiences and non-gaming amenities, and there is untapped value in leveraging that data to improve player interactions. Our team has been in the casino industry since 1997 and we understand the value of guest-centric technology that also benefits casino operators. Our singular focus is not just to provide you with seamless access to the non-gaming spend of your players, but to convert that data into useful information that empowers you to make decisions that improve your bottom line. SpendSight is agile, experienced and personalized, with customized design and pricing to fit your budget. <button type="button" class="btn btn-danger"><a href="#google_map" id="demo_button">Request A Demo</a></button></p>
+              <p class="lead">The expectation of the casino visitor is rapidly evolving towards spending more money on experiences and non-gaming amenities, and there is untapped value in leveraging that data to improve player interactions. Our team has been in the casino industry since 1997 and we understand the value of guest-centric technology that also benefits casino operators. Our singular focus is not just to provide you with seamless access to the non-gaming spend of your players, but to convert that data into useful information that empowers you to make decisions that improve your bottom line. SpendSight is agile, experienced and personalized, with customized design and pricing to fit your budget.
             </div>
           </div>
         </div>
@@ -170,40 +179,15 @@
       <!-- /fifth section -->
 
 <!-- contact form section -->
-<div class="modal fade" tabindex="-1" role="dialog">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <h4 class="modal-title">Modal title</h4>
-</div>
-<div class="modal-body">
-  <p>One fine body&hellip;</p>
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-  <button type="button" class="btn btn-primary">Save changes</button>
-</div>
-</div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<!-- contact form section -->
-<!-- <form action="https://formspree.io/kahlil@spendsight.com"
-      method="POST">
-    <input type="text" name="name" placeholder="First and Last Name Here">
-    <input type="email" name="_replyto" placeholder="Your Email Here">
-    <textarea name="name" rows="8" cols="40" input type="message" name="_message" placeholder="How can we help?"></textarea>
-    <input type="submit" value="Send">
-</form> -->
+  <div class="form-group" id="dialog" title="Let's Connect">
+      <input class="form-control" type="text" name="name" placeholder="Your name">
+      <input class="form-control" type="email" name="_replyto" placeholder="Your email">
+      <textarea class="form-control" name="message" placeholder="How can we help?"></textarea>
+      <button type="submit" class="btn btn-success" id="send_email">Send</button>
+  </div>
 
-<form id="contactform" action="//formspree.io/kahlil@spendsight.com" method="POST">
-  <input type="text" name="_gotcha" style="display:none" />
-  <input type="hidden" name="_subject" value="Who to contact" />
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="_replyto" placeholder="Your email">
-    <textarea name="message" placeholder="Your message"></textarea>
-    <input type="submit" value="Send">
-</form>
+
+
 <!-- contact form section -->
 
     <!-- google map -->
