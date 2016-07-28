@@ -26,7 +26,7 @@
   <script src="main.js"></script>
 
   <!-- navigation panel -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="top_nav">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -180,14 +180,13 @@
 
 <!-- contact form section -->
   <div class="form-group" id="dialog" title="Let's Connect">
-      <input class="form-control" type="text" name="name" placeholder="Your name">
-      <input class="form-control" type="email" name="_replyto" placeholder="Your email">
-      <textarea class="form-control" name="message" placeholder="How can we help?"></textarea>
-      <button type="submit" class="btn btn-success" id="send_email">Send</button>
+      <form action="MAILTO:kahlil@spendsight.com" method="post" enctype="text/plain">
+        <input class="form-control" type="text" name="name" placeholder="Your name">
+        <input class="form-control" type="email" name="_replyto" placeholder="Your email">
+        <textarea class="form-control" name="message" placeholder="How can we help?"></textarea>
+        <button type="submit" class="btn btn-success" id="send_email">Send</button>
+      </form>
   </div>
-
-
-
 <!-- contact form section -->
 
     <!-- google map -->
@@ -207,5 +206,6 @@
       </div>
     </footer>
     <!-- /footer -->
+  
   </body>
 </html>

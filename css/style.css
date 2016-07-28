@@ -1,7 +1,4 @@
-/*jquery-ui contact form widget*/
-/*.ui-dialog-title{
-  background-color: white;
-}*/
+/*jquery-ui contact form*/
 
 .ui-dialog-titlebar{
   color: blue;
@@ -24,7 +21,14 @@ table {
   text-align: center;
   width: 100%
 }
-/*jquery-ui contact form widget*/
+/*jquery-ui contact form*/
+
+/*top navbar*/
+#top_nav{
+  
+}
+/*top navbar*/
+
 
 /* general styles */
 html, body {
