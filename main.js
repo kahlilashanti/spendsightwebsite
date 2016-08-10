@@ -55,7 +55,7 @@ $(document).ready(function (){
 
     // top navbar transparent
     window.onscroll = fadeNav;
-    
+
       function fadeNav(){
         var offset = getScrollXY();
         //if y offset is greater than 0, set opacity to desired value, otherwise set to 1
@@ -63,7 +63,7 @@ $(document).ready(function (){
       }
 
       function setNavOpacity(newOpacity){
-        var navBar = document.getElementById("top_nav");
+        var navBar = document.getElementById("top");
         navBar.style.opacity = newOpacity;
       }
 
@@ -87,6 +87,32 @@ $(document).ready(function (){
       }
     // top navbar transparent
 
-
-
+    // smoothscroll
+    $(function() {
+      function filterPath(string) {
+      return string
+        .replace(/^\//,'')
+        .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+        .replace(/\/$/,'');
+      }
+      var locationPath = filterPath(location.pathname);
+      $('#top_nav a[href*=\\#]').each(function() {
+        var thisPath = filterPath(this.pathname) || locationPath;
+        if (  locationPath == thisPath
+        && (location.hostname == this.hostname || !this.hostname)
+        && this.hash.replace(/#/,'') ) {
+          var $target = $(this.hash), target = this.hash;
+          if (target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function(event) {
+              event.preventDefault();
+              $('html, body').animate({scrollTop: targetOffset}, 400, function() {
+                location.hash = target;
+              });
+            });
+          }
+        }
+      });
+    });
+// smoothscroll
 });

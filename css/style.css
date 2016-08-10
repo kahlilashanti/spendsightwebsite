@@ -30,7 +30,11 @@ table {
 }
 /*jquery-ui contact form*/
 
-
+/*navbar lettering*/
+#home_nav, #services_nav, #about_nav, #team_nav{
+  color: #306d9f;
+}
+/*navbar lettering*/
 
 
 
